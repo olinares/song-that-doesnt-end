@@ -11,7 +11,14 @@
   </head>
   <body>
     <div class="container text-center">
+      <%= link_to 'Home', root_path %> |
+
+      <%= link_to "Youtube", "http://www.youtube.com/watch?v=HNTxr2NJHa0" %>
       <%= yield %>
-    </div>
+      </div>
+      
+          <div class="alert alert-success" role="alert">
+        <%= Time.now %>
+        </div>
   </body>
 </html>
